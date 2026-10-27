@@ -1,0 +1,37 @@
+{
+  "schema": "ruc-work-scenarios-v1",
+  "scenarios": [
+    {
+      "id": "less-availability",
+      "capacity": 14
+    },
+    {
+      "id": "search-complexity",
+      "overrides": [
+        {
+          "id": "search-index",
+          "demand": 3
+        },
+        {
+          "id": "search-fix",
+          "demand": 7,
+          "value": 22
+        }
+      ]
+    },
+    {
+      "id": "visitor-priority",
+      "capacity": 15,
+      "overrides": [
+        {
+          "id": "visitor-notice",
+          "value": 14
+        },
+        {
+          "id": "notice-translation",
+          "value": 11
+        }
+      ]
+    }
+  ]
+}

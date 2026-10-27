@@ -1,0 +1,18 @@
+{
+  "revision": "engineering-1",
+  "capacity": 8,
+  "completed_ids": [],
+  "resource_limits": {"engineering": 5, "review": 3},
+  "tasks": [
+    {"id": "baseline", "demand": 1, "value": 0, "requires": [], "resources": {"engineering": 1}},
+    {"id": "search", "demand": 3, "value": 12, "requires": ["baseline"], "resources": {"engineering": 4, "review": 3}},
+    {"id": "reliability", "demand": 3, "value": 11, "requires": ["baseline"], "resources": {"engineering": 2, "review": 1}},
+    {"id": "telemetry", "demand": 2, "value": 8, "resources": {"engineering": 2, "review": 2}},
+    {"id": "migration-review", "demand": 1, "value": 1, "resources": {"review": 4}}
+  ],
+  "metadata": {
+    "schema": "ruc-work-metadata-v1",
+    "resource_unit": "coordination slots in one planning window",
+    "value_basis": "Invented engineering priorities. Named resources are engineer and reviewer half-days; these estimates are not measured utility."
+  }
+}

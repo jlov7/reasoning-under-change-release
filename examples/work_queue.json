@@ -1,0 +1,27 @@
+{
+  "revision": "ci-1",
+  "capacity": 10,
+  "completed_ids": [],
+  "tasks": [
+    {
+      "id": "compile",
+      "demand": 6,
+      "value": 25
+    },
+    {
+      "id": "lint",
+      "demand": 5,
+      "value": 23
+    },
+    {
+      "id": "smoke",
+      "demand": 4,
+      "value": 18
+    },
+    {
+      "id": "unit",
+      "demand": 5,
+      "value": 22
+    }
+  ]
+}

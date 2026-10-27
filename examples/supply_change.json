@@ -1,0 +1,12 @@
+{
+  "job_id": "job-7",
+  "capacity": 1,
+  "deadline": 6,
+  "delay": 3,
+  "ttl": 2,
+  "events": [
+    {"at": 1, "entity": "unrelated", "kind": "noise", "value": "status-update"},
+    {"at": 2, "entity": "capacity", "kind": "capacity", "value": 0},
+    {"at": 4, "entity": "capacity", "kind": "capacity", "value": 2}
+  ]
+}

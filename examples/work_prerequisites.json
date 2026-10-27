@@ -1,0 +1,26 @@
+{
+  "revision": "museum-1",
+  "capacity": 20,
+  "completed_ids": [],
+  "metadata": {
+    "schema": "ruc-work-metadata-v1",
+    "resource_unit": "15-minute maintenance effort blocks, including completed work",
+    "value_basis": "Authored relative priorities for an invented museum website. Not observed visitor benefit."
+  },
+  "tasks": [
+    {"id": "inventory", "demand": 2, "value": 0, "requires": []},
+    {"id": "baseline", "demand": 3, "value": 0, "requires": ["inventory"]},
+    {"id": "smoke", "demand": 2, "value": 4, "requires": ["baseline"], "mandatory": true},
+    {"id": "search-index", "demand": 2, "value": 0, "requires": ["baseline"]},
+    {"id": "accessibility-check", "demand": 3, "value": 0, "requires": ["baseline"]},
+    {"id": "visitor-notice", "demand": 4, "value": 10, "requires": ["baseline"]},
+    {"id": "mobile-booking", "demand": 5, "value": 12, "requires": ["baseline"]},
+    {"id": "keyboard-flow", "demand": 4, "value": 14, "requires": ["accessibility-check", "baseline"]},
+    {"id": "search-fix", "demand": 5, "value": 20, "requires": ["search-index"]},
+    {"id": "image-cleanup", "demand": 4, "value": 5, "requires": ["baseline"]},
+    {"id": "holiday-hours", "demand": 2, "value": 8, "requires": ["inventory"]},
+    {"id": "release-notes", "demand": 1, "value": 3, "requires": ["smoke"]},
+    {"id": "notice-translation", "demand": 3, "value": 8, "requires": ["visitor-notice"]},
+    {"id": "search-help", "demand": 2, "value": 5, "requires": ["search-fix"]}
+  ]
+}

@@ -1,0 +1,37 @@
+[build-system]
+requires = ["setuptools>=77.0.3", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "reasoning-under-change"
+version = "1.1.1"
+description = "Bounded exact work-queue selection with dependencies, named budgets and revision checks."
+requires-python = ">=3.11,<3.14"
+dependencies = []
+license = "MIT"
+license-files = ["LICENSE"]
+readme = "README.md"
+keywords = ["simulation", "planning", "reproducibility"]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+]
+
+[project.scripts]
+ruc-scenario = "reasoning_under_change.cli:main"
+ruc-grid = "reasoning_under_change.experiment:main"
+ruc-planning = "reasoning_under_change.planning_benchmark:main"
+ruc-work = "reasoning_under_change.work:main"
+ruc-results = "reasoning_under_change.results:main"
+
+[tool.setuptools.package-data]
+reasoning_under_change = ["data/*.json"]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.ruff]
+target-version = "py311"
+line-length = 100

@@ -1,0 +1,15 @@
+include CITATION.cff
+include LICENSE
+include README.md pyproject.toml requirements-build.txt
+include CONTRIBUTING.md SECURITY.md SUPPORT.md CHANGELOG.md
+include examples/*.json
+include docs/USAGE.md docs/DESIGN.md docs/EVALUATION.md docs/LIMITATIONS.md docs/REFERENCES.md
+include docs/VALIDATION.md
+include docs/STABILITY.md docs/RELEASING.md
+recursive-include docs/images *.svg
+include docs/CPU-PLANNING-PROTOCOL.md docs/CPU-PLANNING-V2-PROTOCOL.md
+recursive-include src/reasoning_under_change/data *.json
+recursive-include tests *.py
+include scripts/verify_release.py
+prune .release-scratch
+exclude AGENTS.md STATUS.md LICENSE-STATUS.md

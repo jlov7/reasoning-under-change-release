@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="920" height="500" viewBox="0 0 920 500" role="img" aria-labelledby="title desc">
+<title id="title">Select once, revise pending work</title>
+<desc id="desc">A bounded queue passes read-only input validation before exact planning and checking. A new revision and the checked prior plan feed replanning. Completed tasks remain fixed. Frontier, sensitivity and scenario reports are separate calculations.</desc>
+<defs><marker id="arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0 0 L8 4 L0 8Z" fill="#315f7d"/></marker></defs>
+<rect width="920" height="500" fill="#f7fafc"/>
+<g font-family="Arial, sans-serif" fill="#163347">
+<text x="30" y="38" font-size="25" font-weight="700">Select once, revise pending work</text>
+<text x="30" y="65" font-size="15">Offline calculations from supplied estimates. No task execution or timed schedule.</text>
+<g fill="#fff" stroke="#aebfcb" stroke-width="1.5">
+<rect x="30" y="100" width="250" height="104" rx="9"/><rect x="335" y="100" width="250" height="104" rx="9"/><rect x="640" y="100" width="250" height="104" rx="9"/>
+<rect x="30" y="300" width="250" height="104" rx="9"/><rect x="335" y="300" width="250" height="104" rx="9"/><rect x="640" y="300" width="250" height="104" rx="9"/>
+</g>
+<g font-size="18" font-weight="700"><text x="49" y="130">Queue + budgets</text><text x="354" y="130">validate</text><text x="659" y="130">plan + check</text><text x="49" y="330">Updated queue</text><text x="354" y="330">replan</text><text x="659" y="330">Revised saved plan</text></g>
+<g font-size="15"><text x="49" y="158">Tasks, dependencies, values</text><text x="49" y="183">Revision and completions</text><text x="354" y="158">Schema and required closure</text><text x="354" y="183">Feasibility, no optimization</text><text x="659" y="158">Exact selection + input digest</text><text x="659" y="183">Usage, slack, pending order</text><text x="49" y="358">New estimates or availability</text><text x="49" y="383">New revision, true completions</text><text x="354" y="358">Completed work stays fixed</text><text x="354" y="383">Reconsider pending selection</text><text x="659" y="358">Fresh output filename</text><text x="659" y="383">check / history for consistency</text></g>
+<g fill="none" stroke="#315f7d" stroke-width="2.4" marker-end="url(#arrow)"><path d="M280 152 H327"/><path d="M585 152 H632"/><path d="M280 352 H327"/><path d="M585 352 H632"/><path d="M765 204 V246 H460 V292"/></g>
+<text x="497" y="237" font-size="14" fill="#315f7d">Previous checked plan</text>
+<rect x="30" y="436" width="860" height="40" rx="7" fill="#e3edf3"/>
+<text x="50" y="461" font-size="15">frontier / sensitivity / scenarios: separate read-only reports from the queue and supplied cases</text>
+</g></svg>
